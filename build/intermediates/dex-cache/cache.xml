@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bd75f9f0296fe220da6d0ad961831b04541c4452">
+        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-10.2.0_416e1741a9422b390be6e1695e822dcdefdbe984/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/exploded-aar/com.google.android.support/wearable/2.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d4d699dd197929286d19b015f4c142b8360f2137">
+        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.support-wearable-2.0.0_033e31928d45e621bee8b3a18e876a37d5d7ff6c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/prashant/Android/Sdk/extras/android/m2repository/com/android/support/support-annotations/24.0.0/support-annotations-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2943c74db6d4346ab8c6531adac91fa05c137c40">
+        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.0.0_c9f0aff3815afac42f2ea6151fd1cbb632152a80/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/libs/internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="fcaf463e10e69c1923ccf1edeba3b4196d239e00">
+        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.0.0_fc74f81bd5e538b8cad38acf5b4b1043f0ae554f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="67b63af6926766b1493c248aae20757dc8ee3bd8">
+        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6b4bb6a4ff50f8740c5f0bc644c5737c5b3093ca/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3d13e510077b35fe8e49930a627dd849ad5da0dc">
+        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-10.2.0_ff744dc28f6aa7e8581316eba073b0b7c9d50a42/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="1ac56e5801e986583cbe27f2cce57f626cc7ff93">
+        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-10.2.0_5211350c6d38a59841879f9974fe0d669afa6819/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4356e230a981d1bbf047d848b91bc0d9b7c5bacc">
+        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.0.1_c63acee94b3a02fe1a0df9e97cd875d9b8edff6d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/10.2.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="101393e975eaf36e3ff40b277ee9a019e077afef">
+        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-wearable-10.2.0_8b9953215c6126b165b2175ead6e5d3abdd91801/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2ce3ea410fa494ea8dfa2328c5c20bebe6223515">
+        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ff584e2e90f68b463ba10955d470a9b2613cbbf2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/exploded-aar/com.android.support/support-v4/24.0.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="2f7e6e2dad1bccaf68a8820820adc6c0d5b96d37">
+        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.0.0_c0f021cebe515ebe408b6d124fdd726166baa70b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/exploded-aar/com.android.support/percent/23.0.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="cddfbb68753c7b1222ffb7af97bfd9ecf413aba7">
+        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-percent-23.0.1_4365046d5e63f40d674840dd9f4de97d625389b9/classes.dex" />
+    </item>
+
+</items>

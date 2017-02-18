@@ -18,17 +18,32 @@ package com.example.android.sunshine.sync;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.text.format.DateUtils;
+import android.util.Log;
 
 import com.example.android.sunshine.data.SunshinePreferences;
 import com.example.android.sunshine.data.WeatherContract;
 import com.example.android.sunshine.utilities.NetworkUtils;
 import com.example.android.sunshine.utilities.NotificationUtils;
 import com.example.android.sunshine.utilities.OpenWeatherJsonUtils;
+import com.google.android.gms.common.ConnectionResult;
+import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.wearable.DataMap;
+import com.google.android.gms.wearable.PutDataMapRequest;
+import com.google.android.gms.wearable.PutDataRequest;
+import com.google.android.gms.wearable.Wearable;
 
 import java.net.URL;
 
 public class SunshineSyncTask {
+
+    private static final String TAG = "sunshine.sync";
+
+    private static final String KEY_HIGH_TEMP = "max_temp";
+    private static final String KEY_LOW_TEMP = "min_temp";
+    private static final String KEY_WEATHER_ID = "weather_id";
+    private static final String KEY_PATH = "/wearable";
 
     /**
      * Performs the network request for updated weather, parses the JSON from that request, and
@@ -75,6 +90,44 @@ public class SunshineSyncTask {
                 sunshineContentResolver.bulkInsert(
                         WeatherContract.WeatherEntry.CONTENT_URI,
                         weatherValues);
+
+                //Sync with the watch face
+                GoogleApiClient apiClient=new GoogleApiClient.Builder(context).addApi(Wearable.API).build();
+
+                Cursor cursor=context.getContentResolver()
+                        .query(WeatherContract.WeatherEntry.CONTENT_URI,
+                                new String[]{WeatherContract.WeatherEntry.COLUMN_MIN_TEMP,
+                                        WeatherContract.WeatherEntry.COLUMN_MAX_TEMP,
+                                        WeatherContract.WeatherEntry.COLUMN_WEATHER_ID},null,null,null);
+                if(cursor!=null)
+                {
+                    cursor.moveToFirst();
+                    ConnectionResult result=apiClient.blockingConnect();
+                    if(result.isSuccess())
+                    {
+                        PutDataMapRequest putDataMapRequest=PutDataMapRequest.create(KEY_PATH);
+                        DataMap dataMap=putDataMapRequest.getDataMap();
+                        dataMap.putString(KEY_HIGH_TEMP,cursor.getString(cursor
+                                .getColumnIndex(WeatherContract.WeatherEntry.COLUMN_MAX_TEMP)));
+                        dataMap.putString(KEY_LOW_TEMP,cursor.getString(cursor.
+                                getColumnIndex(WeatherContract.WeatherEntry.COLUMN_MIN_TEMP)));
+                        dataMap.putInt(KEY_WEATHER_ID,Integer.parseInt(cursor.getString
+                                (cursor.getColumnIndex(WeatherContract.WeatherEntry.COLUMN_WEATHER_ID))));
+                        PutDataRequest putDataRequest=putDataMapRequest.asPutDataRequest();
+                        Wearable.DataApi.putDataItem(apiClient,putDataRequest);
+
+                        Log.d(TAG,"Data To Watch Face");
+                    }
+                    else
+                    {
+                        Log.e(TAG,result.getErrorMessage());
+                    }
+
+                }
+                else
+                {
+                    Log.e(TAG, " Cursor crash ");
+                }
 
                 /*
                  * Finally, after we insert data into the ContentProvider, determine whether or not

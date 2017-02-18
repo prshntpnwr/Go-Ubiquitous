@@ -102,6 +102,8 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
         Paint mDatePaint;
         Paint mColonPaint;
         Paint mMeridiemPaint;
+        Paint mDividerLinePaint;
+
         final BroadcastReceiver mTimeZoneReceiver = new BroadcastReceiver() {
             @Override
             public void onReceive(Context context, Intent intent) {
@@ -152,7 +154,10 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             mHourPaint = createTextPaint(timeColor, BOLD_TYPEFACE);
             mMinutePaint = createTextPaint(timeColor);
             mColonPaint = createTextPaint(timeColor);
-            mMeridiemPaint = createTextPaint(resources.getColor(R.color.digital_meridiem_color));
+            mMeridiemPaint = createTextPaint(resources.getColor(R.color.digital_Meridiem_color));
+
+            mDividerLinePaint = new Paint();
+            mDividerLinePaint.setColor(resources.getColor(R.color.digital_divider_color));
 
             mCalendar = Calendar.getInstance();
             mDate = new Date();
@@ -238,7 +243,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                     ? R.dimen.digital_text_size_round : R.dimen.digital_text_size);
 
             float amPmSize = resources.getDimension(isRound
-                    ? R.dimen.digital_am_pm_size_round : R.dimen.digital_am_pm_size);
+                    ? R.dimen.digital_Meridiem_size_round : R.dimen.digital_Meridiem_size);
 
             mDatePaint.setTextSize(resources.getDimension(R.dimen.digital_date_text_size));
             mHourPaint.setTextSize(textSize);
@@ -270,12 +275,16 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             super.onAmbientModeChanged(inAmbientMode);
 
             mMeridiemPaint.setColor(inAmbientMode ?
-                    getResources().getColor(R.color.digital_meridiem_color_ambient) :
-                    getResources().getColor(R.color.digital_meridiem_color));
+                    getResources().getColor(R.color.digital_Meridiem_color_ambient) :
+                    getResources().getColor(R.color.digital_Meridiem_color));
 
             mDatePaint.setColor(inAmbientMode ?
                     getResources().getColor(R.color.digital_date_color_ambient) :
                     getResources().getColor(R.color.digital_date_color));
+
+            mDividerLinePaint.setColor(inAmbientMode ?
+                    getResources().getColor(R.color.digital_divider_color_ambient) :
+                    getResources().getColor(R.color.digital_divider_color));
 
             if (mLowBitAmbient) {
                 mDatePaint.setAntiAlias(!inAmbientMode);
@@ -388,6 +397,13 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                         mMeridiemPaint);
             }
 
+            // onDraw horizontal divider
+            int lineWidth = 70;
+            canvas.drawLine(bounds.centerX() - lineWidth / 2,
+                    mYOffset + (mLineHeight * 2),
+                    bounds.centerX() + lineWidth / 2,
+                    mYOffset + (mLineHeight * 2),
+                    mDividerLinePaint);
 
             String formattedDate = mDayOfWeekFormat.format(mDate).toUpperCase();
             // Day of week

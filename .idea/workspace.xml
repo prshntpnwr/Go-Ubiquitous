@@ -11,8 +11,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8133e1c4-9551-419f-be84-475475d68565" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/sync/SunshineSyncTask.java" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/sync/SunshineSyncTask.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java" afterPath="$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java" />
     </list>
     <ignored path="Go-Ubiquitous.iws" />
@@ -46,34 +45,51 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SunshineWatchFace.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="SunshineWatchFace.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="232">
-              <caret line="563" column="51" selection-start-line="563" selection-start-column="51" selection-end-line="563" selection-end-column="51" />
+            <state relative-caret-position="-1134">
+              <caret line="294" column="86" selection-start-line="294" selection-start-column="86" selection-end-line="294" selection-end-column="86" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#5374#5635#0" expanded="true" />
-                <element signature="e#5634#5635#0" expanded="true" />
-                <element signature="e#6642#6690#0" expanded="true" />
-                <element signature="e#6715#6763#0" expanded="true" />
-                <element signature="e#6866#6906#0" expanded="true" />
-                <element signature="e#6932#6972#0" expanded="true" />
-                <element signature="e#7000#7051#0" expanded="true" />
-                <element signature="e#11299#11330#0" expanded="true" />
-                <element signature="e#11333#11358#0" expanded="true" />
-                <element signature="e#11448#11483#0" expanded="true" />
-                <element signature="e#11486#11515#0" expanded="true" />
-                <element signature="e#11601#11632#0" expanded="true" />
-                <element signature="e#11635#11660#0" expanded="true" />
-                <element signature="e#11699#11753#0" expanded="true" />
-                <element signature="e#15432#15448#0" expanded="true" />
-                <element signature="e#21779#21817#0" expanded="true" />
-                <element signature="e#21899#21937#0" expanded="true" />
-                <element signature="e#25328#26131#0" expanded="true" />
-                <element signature="e#26130#26131#0" expanded="true" />
-                <element signature="e#26201#26618#0" expanded="true" />
-                <element signature="e#26617#26618#0" expanded="true" />
+                <element signature="e#5541#5802#0" expanded="true" />
+                <element signature="e#5801#5802#0" expanded="true" />
+                <element signature="e#6809#6857#0" expanded="true" />
+                <element signature="e#6882#6930#0" expanded="true" />
+                <element signature="e#7033#7073#0" expanded="true" />
+                <element signature="e#7099#7139#0" expanded="true" />
+                <element signature="e#7167#7218#0" expanded="true" />
+                <element signature="e#10464#12056#0" expanded="true" />
+                <element signature="e#11102#11943#0" expanded="true" />
+                <element signature="e#11942#11943#0" expanded="true" />
+                <element signature="e#12055#12056#0" expanded="true" />
+                <element signature="e#13292#13323#0" expanded="true" />
+                <element signature="e#13326#13351#0" expanded="true" />
+                <element signature="e#13441#13476#0" expanded="true" />
+                <element signature="e#13479#13508#0" expanded="true" />
+                <element signature="e#13594#13625#0" expanded="true" />
+                <element signature="e#13628#13653#0" expanded="true" />
+                <element signature="e#13692#13746#0" expanded="true" />
+                <element signature="e#17425#17441#0" expanded="true" />
+                <element signature="e#23772#23810#0" expanded="true" />
+                <element signature="e#23892#23930#0" expanded="true" />
+                <element signature="e#27252#28055#0" expanded="true" />
+                <element signature="e#28054#28055#0" expanded="true" />
+                <element signature="e#28125#28542#0" expanded="true" />
+                <element signature="e#28541#28542#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MyWearableListenerService.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/wearable/MyWearableListenerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="32" column="81" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="81" />
+              <folding>
+                <element signature="e#557#558#0" expanded="true" />
+                <element signature="e#589#590#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -2831,7 +2847,6 @@
         <option value="$PROJECT_DIR$/wear/src/main/res/values/strings.xml" />
         <option value="$PROJECT_DIR$/wear/src/main/res/values/colors.xml" />
         <option value="$PROJECT_DIR$/wear/src/main/res/values/dimens.xml" />
-        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/wearable/MyWearableListenerService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/data/SunshinePreferences.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/wearable/MyWearableIntentService.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/wearable/MyWearableProvider.java" />
@@ -2843,6 +2858,7 @@
         <option value="$PROJECT_DIR$/wear/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/sync/SunshineSyncTask.java" />
         <option value="$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/wearable/MyWearableListenerService.java" />
       </list>
     </option>
   </component>
@@ -3131,6 +3147,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="res" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Go-Ubiquitous" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Go-Ubiquitous" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -3169,7 +3211,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="utilities" />
+              <option name="myItemId" value="wearable" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3188,92 +3230,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sunshine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sync" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Go-Ubiquitous" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Go-Ubiquitous" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="sunshine" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="data" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Go-Ubiquitous" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Go-Ubiquitous" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Go-Ubiquitous" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Go-Ubiquitous" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -3783,7 +3739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/wearable/MyWearableListenerService.java" />
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/utilities/OpenWeatherJsonUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2303">
@@ -4004,31 +3959,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="232">
-          <caret line="563" column="51" selection-start-line="563" selection-start-column="51" selection-end-line="563" selection-end-column="51" />
+        <state relative-caret-position="-1134">
+          <caret line="294" column="86" selection-start-line="294" selection-start-column="86" selection-end-line="294" selection-end-column="86" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#5374#5635#0" expanded="true" />
-            <element signature="e#5634#5635#0" expanded="true" />
-            <element signature="e#6642#6690#0" expanded="true" />
-            <element signature="e#6715#6763#0" expanded="true" />
-            <element signature="e#6866#6906#0" expanded="true" />
-            <element signature="e#6932#6972#0" expanded="true" />
-            <element signature="e#7000#7051#0" expanded="true" />
-            <element signature="e#11299#11330#0" expanded="true" />
-            <element signature="e#11333#11358#0" expanded="true" />
-            <element signature="e#11448#11483#0" expanded="true" />
-            <element signature="e#11486#11515#0" expanded="true" />
-            <element signature="e#11601#11632#0" expanded="true" />
-            <element signature="e#11635#11660#0" expanded="true" />
-            <element signature="e#11699#11753#0" expanded="true" />
-            <element signature="e#15432#15448#0" expanded="true" />
-            <element signature="e#21779#21817#0" expanded="true" />
-            <element signature="e#21899#21937#0" expanded="true" />
-            <element signature="e#25328#26131#0" expanded="true" />
-            <element signature="e#26130#26131#0" expanded="true" />
-            <element signature="e#26201#26618#0" expanded="true" />
-            <element signature="e#26617#26618#0" expanded="true" />
+            <element signature="e#5541#5802#0" expanded="true" />
+            <element signature="e#5801#5802#0" expanded="true" />
+            <element signature="e#6809#6857#0" expanded="true" />
+            <element signature="e#6882#6930#0" expanded="true" />
+            <element signature="e#7033#7073#0" expanded="true" />
+            <element signature="e#7099#7139#0" expanded="true" />
+            <element signature="e#7167#7218#0" expanded="true" />
+            <element signature="e#10464#12056#0" expanded="true" />
+            <element signature="e#11102#11943#0" expanded="true" />
+            <element signature="e#11942#11943#0" expanded="true" />
+            <element signature="e#12055#12056#0" expanded="true" />
+            <element signature="e#13292#13323#0" expanded="true" />
+            <element signature="e#13326#13351#0" expanded="true" />
+            <element signature="e#13441#13476#0" expanded="true" />
+            <element signature="e#13479#13508#0" expanded="true" />
+            <element signature="e#13594#13625#0" expanded="true" />
+            <element signature="e#13628#13653#0" expanded="true" />
+            <element signature="e#13692#13746#0" expanded="true" />
+            <element signature="e#17425#17441#0" expanded="true" />
+            <element signature="e#23772#23810#0" expanded="true" />
+            <element signature="e#23892#23930#0" expanded="true" />
+            <element signature="e#27252#28055#0" expanded="true" />
+            <element signature="e#28054#28055#0" expanded="true" />
+            <element signature="e#28125#28542#0" expanded="true" />
+            <element signature="e#28541#28542#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/wearable/MyWearableListenerService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="32" column="81" selection-start-line="32" selection-start-column="81" selection-end-line="32" selection-end-column="81" />
+          <folding>
+            <element signature="e#557#558#0" expanded="true" />
+            <element signature="e#589#590#0" expanded="true" />
           </folding>
         </state>
       </provider>

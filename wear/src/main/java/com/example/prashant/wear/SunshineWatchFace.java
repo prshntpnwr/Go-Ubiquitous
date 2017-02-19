@@ -72,8 +72,8 @@ import java.util.concurrent.TimeUnit;
 public class SunshineWatchFace extends CanvasWatchFaceService {
     private static final Typeface NORMAL_TYPEFACE =
             Typeface.create(Typeface.SANS_SERIF, Typeface.NORMAL);
-    private static final Typeface BOLD_TYPEFACE =
-                        Typeface.create(Typeface.SANS_SERIF, Typeface.BOLD);
+   // private static final Typeface BOLD_TYPEFACE =
+   //                     Typeface.create(Typeface.SANS_SERIF, Typeface.BOLD);
 
     /**
      * Update rate in milliseconds for interactive mode. We update once a second since seconds are
@@ -193,8 +193,8 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             //mTextPaint = new Paint();
             //mTextPaint = createTextPaint(resources.getColor(R.color.digital_text));
             mDatePaint = createTextPaint(resources.getColor(R.color.digital_date_color));
-            mHourPaint = createTextPaint(timeColor, BOLD_TYPEFACE);
-            mMinutePaint = createTextPaint(timeColor, BOLD_TYPEFACE);
+            mHourPaint = createTextPaint(timeColor);
+            mMinutePaint = createTextPaint(timeColor);
             mColonPaint = createTextPaint(timeColor);
             mMeridiemPaint = createTextPaint(resources.getColor(R.color.digital_Meridiem_color));
 
@@ -230,13 +230,13 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             return paint;
         }
 
-        private Paint createTextPaint(int textColor, Typeface typeface) {
+        /*private Paint createTextPaint(int textColor, Typeface typeface) {
             Paint paint = new Paint();
             paint.setColor(textColor);
             paint.setTypeface(typeface);
             paint.setAntiAlias(true);
             return paint;
-        }
+        }*/
 
         private void initFormat() {
             mDayOfWeekFormat = new SimpleDateFormat("EEE, MMM d yyyy", Locale.getDefault());
@@ -316,8 +316,8 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
         public void onPropertiesChanged(Bundle properties) {
             super.onPropertiesChanged(properties);
 
-            boolean burnInProtection = properties.getBoolean(PROPERTY_BURN_IN_PROTECTION, false);
-            mHourPaint.setTypeface(burnInProtection ? NORMAL_TYPEFACE : BOLD_TYPEFACE);
+            //boolean burnInProtection = properties.getBoolean(PROPERTY_BURN_IN_PROTECTION, false);
+            //mHourPaint.setTypeface(burnInProtection ? NORMAL_TYPEFACE : BOLD_TYPEFACE);
 
             mLowBitAmbient = properties.getBoolean(PROPERTY_LOW_BIT_AMBIENT, false);
         }
@@ -511,9 +511,9 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             // onDraw horizontal divider
             int lineWidth = 70;
             canvas.drawLine(bounds.centerX() - lineWidth / 2,
-                    mYOffset + (mLineHeight * 2),
+                    mYOffset + (mLineHeight * 1.8f),
                     bounds.centerX() + lineWidth / 2,
-                    mYOffset + (mLineHeight * 2),
+                    mYOffset + (mLineHeight * 1.8f),
                     mDividerLinePaint);
 
             //onDraw weather Icon
@@ -525,13 +525,13 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                 ColorMatrixColorFilter filter = new ColorMatrixColorFilter(colorMatrix);
                 mWeatherIconPaint.setColorFilter(filter);
                 canvas.drawBitmap(weatherIcon, xImage,
-                        mYOffset + (mLineHeight * 2.5f),
+                        mYOffset + (mLineHeight * 2f),
                         mWeatherIconPaint);
             } else {
                 mWeatherIconPaint.setColorFilter(null);
                 canvas.drawBitmap(weatherIcon,
                         xImage,
-                        mYOffset + (mLineHeight * 2.5f),
+                        mYOffset + (mLineHeight * 2f),
                         mWeatherIconPaint);
             }
 
@@ -544,12 +544,12 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
 
             canvas.drawText(highTempText,
                     bounds.centerX() - 30,
-                    mYOffset + (mLineHeight * 3.6f),
+                    mYOffset + (mLineHeight * 3.2f),
                     mHighTempPaint);
 
             canvas.drawText(lowTempText,
                     bounds.centerX() + 35,
-                    mYOffset + (mLineHeight * 3.6f),
+                    mYOffset + (mLineHeight * 3.2f),
                     mLowTempPaint);
         }
 

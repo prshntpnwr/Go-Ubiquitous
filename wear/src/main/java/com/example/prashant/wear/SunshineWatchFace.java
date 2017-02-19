@@ -127,8 +127,8 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
         GoogleApiClient googleApiClient;
 
         private int mWeatherId = 0;
-        private String mMaxTemperature;
-        private String mMinTemperature;
+        private String mMaxTemperature = "11";
+        private String mMinTemperature = "22";
 
         Paint mBackgroundPaint;
         //Paint mTextPaint;
@@ -503,9 +503,13 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                         mWeatherIconPaint);
             }
 
+            Log.d(TAG, "HERE IS HIGH TEMPERAtURE ----------- " + mMaxTemperature);
+            Log.d(TAG, "HERE IS LOW TEMPERAtURE ------------ " + mMinTemperature);
+
             //onDraw weather detail
-            String highTempText = String.format(getString(R.string.format_temperature), parseFloat(mMaxTemperature));
-            String lowTempText = String.format(getString(R.string.format_temperature), parseFloat(mMinTemperature));
+            String highTempText = String.format(getString(R.string.format_temperature), Float.valueOf(mMaxTemperature));
+            String lowTempText = String.format(getString(R.string.format_temperature), Float.valueOf(mMinTemperature));
+
             canvas.drawText(highTempText,
                     bounds.centerX() - 30,
                     mYOffset + (mLineHeight * 3.6f),
@@ -517,10 +521,8 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                     mLowTempPaint);
         }
 
-        public void processItem(DataItem dataItem)
-        {
-            if(KEY_PATH.equals(dataItem.getUri().getPath()))
-            {
+        public void processItem(DataItem dataItem) {
+            if(KEY_PATH.equals(dataItem.getUri().getPath())){
                 DataMap map = DataMapItem.fromDataItem(dataItem).getDataMap();
                 mMaxTemperature = map.getString(KEY_HIGH_TEMP);
                 mMinTemperature = map.getString(KEY_LOW_TEMP);

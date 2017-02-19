@@ -127,8 +127,8 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
         GoogleApiClient googleApiClient;
 
         private int mWeatherId = 0;
-        private String mMaxTemperature = "11";
-        private String mMinTemperature = "22";
+        private String mMaxTemperature = "22";
+        private String mMinTemperature = "11";
 
         Paint mBackgroundPaint;
         //Paint mTextPaint;
@@ -401,6 +401,38 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             return Meridiem == Calendar.AM ? mAmString : mPmString;
         }
 
+        private Bitmap getBitmapForWeatherCondition(int weatherId) {
+
+            int weatherIconId = R.drawable.ic_clear;
+
+            if (weatherId >= 200 && weatherId <= 232) {
+                weatherIconId = R.drawable.ic_storm;
+            } else if (weatherId >= 300 && weatherId <= 321) {
+                weatherIconId = R.drawable.ic_light_rain;
+            } else if (weatherId >= 500 && weatherId <= 504) {
+                weatherIconId = R.drawable.ic_rain;
+            } else if (weatherId == 511) {
+                weatherIconId = R.drawable.ic_snow;
+            } else if (weatherId >= 520 && weatherId <= 531) {
+                weatherIconId = R.drawable.ic_light_rain;
+            } else if (weatherId >= 600 && weatherId <= 622) {
+                weatherIconId = R.drawable.ic_snow;
+            } else if (weatherId >= 701 && weatherId <= 761) {
+                weatherIconId = R.drawable.ic_fog;
+            } else if (weatherId == 761 || weatherId == 781) {
+                weatherIconId = R.drawable.ic_storm;
+            } else if (weatherId == 800) {
+                weatherIconId = R.drawable.ic_clear;
+            } else if (weatherId == 801) {
+                weatherIconId = R.drawable.ic_light_clouds;
+            } else if (weatherId >= 802 && weatherId <= 804) {
+                weatherIconId = R.drawable.ic_cloudy;
+            }
+
+            // default bitmap
+            return BitmapFactory.decodeResource(getResources(), weatherIconId);
+        }
+
         @Override
         public void onDraw(Canvas canvas, Rect bounds) {
 
@@ -485,7 +517,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                     mDividerLinePaint);
 
             //onDraw weather Icon
-            weatherIcon = BitmapFactory.decodeResource(getResources(), R.drawable.ic_clear);
+            weatherIcon = getBitmapForWeatherCondition(mWeatherId);
             float xImage = (bounds.width() / 6 + (bounds.width() / 6 - weatherIcon.getHeight()) / 2);
             if (isInAmbientMode()) {
                 ColorMatrix colorMatrix = new ColorMatrix();

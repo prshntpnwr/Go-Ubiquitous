@@ -18,7 +18,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_wear_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_wear_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_wear_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_wear_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java" afterPath="$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java" />
     </list>
     <ignored path="Go-Ubiquitous.iws" />
@@ -55,18 +54,18 @@
       <file leaf-file-name="SunshineWatchFace.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="188">
-              <caret line="130" column="46" selection-start-line="130" selection-start-column="46" selection-end-line="130" selection-end-column="46" />
+            <state relative-caret-position="2076">
+              <caret line="519" column="67" selection-start-line="519" selection-start-column="67" selection-end-line="519" selection-end-column="67" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#3362#3363#0" expanded="true" />
                 <element signature="e#3397#3398#0" expanded="true" />
-                <element signature="e#20242#20280#0" expanded="true" />
-                <element signature="e#20362#20400#0" expanded="true" />
-                <element signature="e#23669#24472#0" expanded="true" />
-                <element signature="e#24471#24472#0" expanded="true" />
-                <element signature="e#24542#24959#0" expanded="true" />
-                <element signature="e#24958#24959#0" expanded="true" />
+                <element signature="e#21699#21737#0" expanded="true" />
+                <element signature="e#21819#21857#0" expanded="true" />
+                <element signature="e#25126#25929#0" expanded="true" />
+                <element signature="e#25928#25929#0" expanded="true" />
+                <element signature="e#25999#26416#0" expanded="true" />
+                <element signature="e#26415#26416#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -3603,7 +3602,7 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.54103583" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.40967742" sideWeight="0.45896414" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46935484" sideWeight="0.45896414" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.019354839" sideWeight="0.40796813" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -4003,18 +4002,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="188">
-          <caret line="130" column="46" selection-start-line="130" selection-start-column="46" selection-end-line="130" selection-end-column="46" />
+        <state relative-caret-position="2076">
+          <caret line="519" column="67" selection-start-line="519" selection-start-column="67" selection-end-line="519" selection-end-column="67" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#3362#3363#0" expanded="true" />
             <element signature="e#3397#3398#0" expanded="true" />
-            <element signature="e#20242#20280#0" expanded="true" />
-            <element signature="e#20362#20400#0" expanded="true" />
-            <element signature="e#23669#24472#0" expanded="true" />
-            <element signature="e#24471#24472#0" expanded="true" />
-            <element signature="e#24542#24959#0" expanded="true" />
-            <element signature="e#24958#24959#0" expanded="true" />
+            <element signature="e#21699#21737#0" expanded="true" />
+            <element signature="e#21819#21857#0" expanded="true" />
+            <element signature="e#25126#25929#0" expanded="true" />
+            <element signature="e#25928#25929#0" expanded="true" />
+            <element signature="e#25999#26416#0" expanded="true" />
+            <element signature="e#26415#26416#0" expanded="true" />
           </folding>
         </state>
       </provider>

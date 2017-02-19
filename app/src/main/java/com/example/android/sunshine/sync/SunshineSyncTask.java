@@ -48,6 +48,7 @@ public class SunshineSyncTask {
     private static final String KEY_LOW_TEMP = "min_temp";
     private static final String KEY_WEATHER_ID = "weather_id";
     private static final String KEY_PATH = "/wearable";
+    private static final String KEY_TIME = "current_time";
 
     /**
      * Performs the network request for updated weather, parses the JSON from that request, and
@@ -120,6 +121,8 @@ public class SunshineSyncTask {
 
                         dataMap.putInt(KEY_WEATHER_ID, Integer.parseInt(cursor.getString
                                 (cursor.getColumnIndex(WeatherContract.WeatherEntry.COLUMN_WEATHER_ID))));
+
+                        dataMap.putLong(KEY_TIME, System.currentTimeMillis());
 
                         PutDataRequest putDataRequest = putDataMapRequest.asPutDataRequest();
                         Wearable.DataApi.putDataItem(apiClient, putDataRequest);

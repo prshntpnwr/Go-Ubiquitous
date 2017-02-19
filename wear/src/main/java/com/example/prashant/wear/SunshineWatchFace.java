@@ -123,12 +123,14 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
         private static final String KEY_LOW_TEMP = "min_temp";
         private static final String KEY_WEATHER_ID = "weather_id";
         private static final String KEY_PATH = "/wearable";
+        private static final String KEY_TIME = "current_time";
 
         GoogleApiClient googleApiClient;
 
         private int mWeatherId = 0;
         private String mMaxTemperature = "22";
         private String mMinTemperature = "11";
+        private long mTimeStamp;
 
         Paint mBackgroundPaint;
         //Paint mTextPaint;
@@ -559,10 +561,12 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                 mMaxTemperature = map.getString(KEY_HIGH_TEMP);
                 mMinTemperature = map.getString(KEY_LOW_TEMP);
                 mWeatherId = map.getInt(KEY_WEATHER_ID);
+                mTimeStamp = map.getLong(KEY_TIME);
 
                 Log.d(TAG, "here is high temperature - " + mMaxTemperature);
                 Log.d(TAG, "here is low temperature - " + mMinTemperature);
                 Log.d(TAG, "here is weather id temperature - " + mWeatherId);
+                Log.d(TAG, "here is the time stamp - " + mTimeStamp);
 
                 invalidate();
             }

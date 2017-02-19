@@ -19,6 +19,7 @@ import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.support.annotation.NonNull;
 import android.text.format.DateUtils;
 import android.util.Log;
 
@@ -29,6 +30,9 @@ import com.example.android.sunshine.utilities.NotificationUtils;
 import com.example.android.sunshine.utilities.OpenWeatherJsonUtils;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.PendingResult;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.wearable.DataApi;
 import com.google.android.gms.wearable.DataMap;
 import com.google.android.gms.wearable.PutDataMapRequest;
 import com.google.android.gms.wearable.PutDataRequest;
@@ -38,7 +42,7 @@ import java.net.URL;
 
 public class SunshineSyncTask {
 
-    private static final String TAG = "sunshine.sync";
+    private static final String TAG = "sunshine.sync.task";
 
     private static final String KEY_HIGH_TEMP = "max_temp";
     private static final String KEY_LOW_TEMP = "min_temp";
@@ -99,33 +103,46 @@ public class SunshineSyncTask {
                                 new String[]{WeatherContract.WeatherEntry.COLUMN_MIN_TEMP,
                                         WeatherContract.WeatherEntry.COLUMN_MAX_TEMP,
                                         WeatherContract.WeatherEntry.COLUMN_WEATHER_ID},null,null,null);
-                if(cursor!=null)
-                {
+
+                if(cursor!=null) {
                     cursor.moveToFirst();
-                    ConnectionResult result=apiClient.blockingConnect();
-                    if(result.isSuccess())
-                    {
-                        PutDataMapRequest putDataMapRequest=PutDataMapRequest.create(KEY_PATH);
-                        DataMap dataMap=putDataMapRequest.getDataMap();
-                        dataMap.putString(KEY_HIGH_TEMP,cursor.getString(cursor
+                    ConnectionResult result = apiClient.blockingConnect();
+
+                    if(result.isSuccess()) {
+                        PutDataMapRequest putDataMapRequest = PutDataMapRequest.create(KEY_PATH);
+                        DataMap dataMap = putDataMapRequest.getDataMap();
+
+                        dataMap.putString(KEY_HIGH_TEMP, cursor.getString(cursor
                                 .getColumnIndex(WeatherContract.WeatherEntry.COLUMN_MAX_TEMP)));
-                        dataMap.putString(KEY_LOW_TEMP,cursor.getString(cursor.
+
+                        dataMap.putString(KEY_LOW_TEMP, cursor.getString(cursor.
                                 getColumnIndex(WeatherContract.WeatherEntry.COLUMN_MIN_TEMP)));
-                        dataMap.putInt(KEY_WEATHER_ID,Integer.parseInt(cursor.getString
+
+                        dataMap.putInt(KEY_WEATHER_ID, Integer.parseInt(cursor.getString
                                 (cursor.getColumnIndex(WeatherContract.WeatherEntry.COLUMN_WEATHER_ID))));
-                        PutDataRequest putDataRequest=putDataMapRequest.asPutDataRequest();
-                        Wearable.DataApi.putDataItem(apiClient,putDataRequest);
 
-                        Log.d(TAG,"Data To Watch Face");
-                    }
-                    else
-                    {
-                        Log.e(TAG,result.getErrorMessage());
+                        PutDataRequest putDataRequest = putDataMapRequest.asPutDataRequest();
+                        Wearable.DataApi.putDataItem(apiClient, putDataRequest);
+
+                        PendingResult<DataApi.DataItemResult> pendingResult = Wearable.DataApi
+                                .putDataItem(apiClient, putDataRequest);
+
+                        pendingResult.setResultCallback(new ResultCallback<DataApi.DataItemResult>() {
+                            @Override
+                            public void onResult(final DataApi.DataItemResult Result) {
+                                if(Result.getStatus().isSuccess()) {
+                                    Log.d(TAG, "Data item set: " + Result.getDataItem().getUri());
+                                }
+                            }
+                        });
+                        //Log.d(TAG, "Data To Watch Face");
                     }
 
+                    else {
+                         Log.e(TAG, result.getErrorMessage());
+                    }
                 }
-                else
-                {
+                else {
                     Log.e(TAG, " Cursor crash ");
                 }
 

@@ -122,7 +122,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
         private static final String KEY_HIGH_TEMP = "max_temp";
         private static final String KEY_LOW_TEMP = "min_temp";
         private static final String KEY_WEATHER_ID = "weather_id";
-        private static final String KEY_PATH = "/weather";
+        private static final String KEY_PATH = "/wearable";
 
         GoogleApiClient googleApiClient;
 
@@ -504,8 +504,8 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             }
 
             //onDraw weather detail
-            String highTempText = String.format(getString(R.string.format_temperature), 30f);
-            String lowTempText = String.format(getString(R.string.format_temperature), 10f);
+            String highTempText = String.format(getString(R.string.format_temperature), parseFloat(mMaxTemperature));
+            String lowTempText = String.format(getString(R.string.format_temperature), parseFloat(mMinTemperature));
             canvas.drawText(highTempText,
                     bounds.centerX() - 30,
                     mYOffset + (mLineHeight * 3.6f),
@@ -523,18 +523,12 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             {
                 DataMap map = DataMapItem.fromDataItem(dataItem).getDataMap();
                 mMaxTemperature = map.getString(KEY_HIGH_TEMP);
-                int temporary = (int) Double.parseDouble(mMaxTemperature);
-
-                mMaxTemperature = temporary + "";
                 mMinTemperature = map.getString(KEY_LOW_TEMP);
-                temporary = (int) Double.parseDouble(mMinTemperature);
-
-                mMinTemperature = temporary + "";
                 mWeatherId = map.getInt(KEY_WEATHER_ID);
 
                 Log.d(TAG, "here is high temperature - " + mMaxTemperature);
                 Log.d(TAG, "here is low temperature - " + mMinTemperature);
-                Log.d(TAG, "here is weather id temperature - " + mMinTemperature);
+                Log.d(TAG, "here is weather id temperature - " + mWeatherId);
 
                 invalidate();
             }
@@ -600,13 +594,13 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             @Override
             public void onDataChanged(DataEventBuffer dataEventBuffer) {
 
-                Log.d(TAG,"On Data Changed Stage 1 --> Count"+ dataEventBuffer.getCount());
+                Log.d(TAG, "On Data Changed Count ------" + dataEventBuffer.getCount());
                 for(DataEvent dataEvent:dataEventBuffer)
                 {
-                    Log.d(TAG,"On Data Changed Stage 2 --> Event Type"+ dataEvent.getType());
+                    Log.d(TAG, "On Data Changed Event Type ----" + dataEvent.getType());
                     if(dataEvent.getType()==DataEvent.TYPE_CHANGED) {
                         DataItem dataItem = dataEvent.getDataItem();
-                        Log.d(TAG,"On Data Changed Stage 3 --> Data Event Details"+ dataEvent.toString());
+                        Log.d(TAG, "On Data Changed Data Event Details -----" + dataEvent.toString());
                         processItem(dataItem);
                     }
                 }
@@ -618,6 +612,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
         ResultCallback<DataItemBuffer> OnConnectedResultCallback = new ResultCallback<DataItemBuffer>() {
             @Override
             public void onResult(DataItemBuffer dataItems) {
+                Log.d(TAG, "On Connected Result Callback " + dataItems.getCount());
                 for(DataItem item:dataItems)
                 {
                     processItem(item);

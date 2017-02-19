@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="624cd13d212f4622b26c29699f5822b47dc92e18">
+        sha1="f0d5fae7564bf57df2834fb2b0eb4fea27e57020">
         <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6b4bb6a4ff50f8740c5f0bc644c5737c5b3093ca/classes.dex" />
     </item>
     <item
@@ -160,7 +160,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="4ef90a5c3c2c694594714d41e176f66155e85083">
+        sha1="101fa1601d6e4eca5313b3cbcbafc7afc0f4b66e">
         <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_210e7968d420c309b4e90087c3ecebe3b5c8694a/classes.dex" />
     </item>
     <item
@@ -214,7 +214,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e8b497089105f79ec55d9b8c4c86dccfa965f21e">
+        sha1="aed6f041b8763e0da4168f4beb93a0882c377ef5">
         <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ff584e2e90f68b463ba10955d470a9b2613cbbf2/classes.dex" />
     </item>
     <item

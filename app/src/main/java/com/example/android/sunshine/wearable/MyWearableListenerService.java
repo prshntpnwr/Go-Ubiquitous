@@ -3,6 +3,7 @@ package com.example.android.sunshine.wearable;
 import android.content.Context;
 import android.content.Intent;
 
+import com.example.android.sunshine.sync.SunshineSyncTask;
 import com.google.android.gms.wearable.DataApi;
 import com.google.android.gms.wearable.MessageEvent;
 import com.google.android.gms.wearable.WearableListenerService;
@@ -31,6 +32,7 @@ public class MyWearableListenerService extends WearableListenerService
         // Check to see if the message is to start an activity
         if (path.equals(KEY_PATH)) {
             // start the service sending the updated weather data to the wearable
+            SunshineSyncTask.syncWeather(getApplicationContext());
         }
     }
 }

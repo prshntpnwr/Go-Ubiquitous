@@ -495,7 +495,8 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                     mCalendar.get(Calendar.MINUTE), mCalendar.get(Calendar.SECOND));
             canvas.drawText(text, mXOffset, mYOffset, mTextPaint);*/
 
-            int centerAdjust = 40;
+            int TimeCenterAdjust = 40;
+            int MeridiemAdjust = 20;
             String colonString =":";
 
             //onDraw hours
@@ -510,21 +511,22 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
 
                 hourString = String.valueOf(hour);
             }
+            
             canvas.drawText(hourString,
-                    bounds.centerX() - (mHourPaint.measureText(hourString) + centerAdjust),
+                    bounds.centerX() - (mHourPaint.measureText(hourString) + TimeCenterAdjust),
                     mYOffset,
                     mHourPaint);
 
             //onDraw Colon
             canvas.drawText(colonString,
-                    bounds.centerX() - centerAdjust,
-                    mYOffset,
+                    bounds.centerX() - TimeCenterAdjust,
+                    mYOffset ,
                     mColonPaint);
 
             //onDraw minutes
             String minuteString = formatTwoDigitNumber(mCalendar.get(Calendar.MINUTE));
             canvas.drawText(minuteString,
-                    bounds.centerX() + mColonPaint.measureText(colonString) - centerAdjust,
+                    bounds.centerX() + mColonPaint.measureText(colonString) - TimeCenterAdjust,
                     mYOffset,
                     mMinutePaint);
 
@@ -532,7 +534,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             // Otherwise, if we're in 12-hour mode, draw AM/PM
             if (!is24Hour) {
                 canvas.drawText(getMeridiemString(mCalendar.get(Calendar.AM_PM)),
-                        bounds.centerX() + mMinutePaint.measureText(minuteString) - 20,
+                        bounds.centerX() + mMinutePaint.measureText(minuteString) - MeridiemAdjust,
                         mYOffset,
                         mMeridiemPaint);
             }
@@ -573,11 +575,13 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             }
 
             Log.d(TAG, "HERE IS HIGH TEMPERAtURE - " + mMaxTemperature);
-            Log.d(TAG, "HERE IS LOW TEMPERAtURE -" + mMinTemperature);
+            Log.d(TAG, "HERE IS LOW TEMPERAtURE - " + mMinTemperature);
 
             //onDraw weather detail
-            String highTempText = String.format(getString(R.string.format_temperature), Float.valueOf(mMaxTemperature));
-            String lowTempText = String.format(getString(R.string.format_temperature), Float.valueOf(mMinTemperature));
+            String highTempText = String.format(getString(R.string.format_temperature),
+                    Float.valueOf(mMaxTemperature));
+            String lowTempText = String.format(getString(R.string.format_temperature),
+                    Float.valueOf(mMinTemperature));
 
             canvas.drawText(highTempText,
                     bounds.centerX() - 30,
@@ -667,13 +671,13 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             @Override
             public void onDataChanged(DataEventBuffer dataEventBuffer) {
 
-                Log.d(TAG, "On Data Changed Count ------" + dataEventBuffer.getCount());
+                Log.d(TAG, "On Data Changed Count - " + dataEventBuffer.getCount());
                 for(DataEvent dataEvent:dataEventBuffer)
                 {
-                    Log.d(TAG, "On Data Changed Event Type ----" + dataEvent.getType());
+                    Log.d(TAG, "On Data Changed Event Type - " + dataEvent.getType());
                     if(dataEvent.getType()==DataEvent.TYPE_CHANGED) {
                         DataItem dataItem = dataEvent.getDataItem();
-                        Log.d(TAG, "On Data Changed Data Event Details -----" + dataEvent.toString());
+                        Log.d(TAG, "On Data Changed Data Event Details - " + dataEvent.toString());
                         processItem(dataItem);
                     }
                 }

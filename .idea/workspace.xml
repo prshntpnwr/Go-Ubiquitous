@@ -11,14 +11,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8133e1c4-9551-419f-be84-475475d68565" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_wear_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_wear_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_wear_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_wear_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java" afterPath="$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java" />
     </list>
     <ignored path="Go-Ubiquitous.iws" />
@@ -55,8 +47,8 @@
       <file leaf-file-name="SunshineWatchFace.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="156">
-              <caret line="531" column="36" selection-start-line="531" selection-start-column="36" selection-end-line="531" selection-end-column="36" />
+            <state relative-caret-position="1128">
+              <caret line="513" column="12" selection-start-line="513" selection-start-column="12" selection-end-line="513" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5541#5802#0" expanded="true" />
@@ -78,12 +70,12 @@
                 <element signature="e#13628#13653#0" expanded="true" />
                 <element signature="e#13692#13746#0" expanded="true" />
                 <element signature="e#17425#17441#0" expanded="true" />
-                <element signature="e#23741#23779#0" expanded="true" />
-                <element signature="e#23861#23899#0" expanded="true" />
-                <element signature="e#27221#28024#0" expanded="true" />
-                <element signature="e#28023#28024#0" expanded="true" />
-                <element signature="e#28094#28511#0" expanded="true" />
-                <element signature="e#28510#28511#0" expanded="true" />
+                <element signature="e#23821#23859#0" expanded="true" />
+                <element signature="e#23961#23999#0" expanded="true" />
+                <element signature="e#27341#28135#0" expanded="true" />
+                <element signature="e#28134#28135#0" expanded="true" />
+                <element signature="e#28205#28622#0" expanded="true" />
+                <element signature="e#28621#28622#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -4075,8 +4067,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="531" column="36" selection-start-line="531" selection-start-column="36" selection-end-line="531" selection-end-column="36" />
+        <state relative-caret-position="1128">
+          <caret line="513" column="12" selection-start-line="513" selection-start-column="12" selection-end-line="513" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#5541#5802#0" expanded="true" />
@@ -4098,12 +4090,12 @@
             <element signature="e#13628#13653#0" expanded="true" />
             <element signature="e#13692#13746#0" expanded="true" />
             <element signature="e#17425#17441#0" expanded="true" />
-            <element signature="e#23741#23779#0" expanded="true" />
-            <element signature="e#23861#23899#0" expanded="true" />
-            <element signature="e#27221#28024#0" expanded="true" />
-            <element signature="e#28023#28024#0" expanded="true" />
-            <element signature="e#28094#28511#0" expanded="true" />
-            <element signature="e#28510#28511#0" expanded="true" />
+            <element signature="e#23821#23859#0" expanded="true" />
+            <element signature="e#23961#23999#0" expanded="true" />
+            <element signature="e#27341#28135#0" expanded="true" />
+            <element signature="e#28134#28135#0" expanded="true" />
+            <element signature="e#28205#28622#0" expanded="true" />
+            <element signature="e#28621#28622#0" expanded="true" />
           </folding>
         </state>
       </provider>

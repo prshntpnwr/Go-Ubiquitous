@@ -7,7 +7,7 @@
   </component>
   <component name="AndroidLogFilters">
     <option name="TOOL_WINDOW_LOG_LEVEL" value="debug" />
-    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="No Filters" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8133e1c4-9551-419f-be84-475475d68565" name="Default" comment="">
@@ -15,9 +15,11 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/fileSnapshots.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/taskArtifacts/taskArtifacts.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_wear_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_wear_compileDebugJavaWithJavac/localClassSetAnalysis/localClassSetAnalysis.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/3.3/tasks/_wear_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" afterPath="$PROJECT_DIR$/.gradle/3.3/tasks/_wear_compileDebugJavaWithJavac/localJarClasspathSnapshot/localJarClasspathSnapshot.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" afterPath="$PROJECT_DIR$/build/intermediates/dex-cache/cache.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java" afterPath="$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java" />
     </list>
     <ignored path="Go-Ubiquitous.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -50,11 +52,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="SunshineWatchFace.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SunshineWatchFace.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1134">
-              <caret line="294" column="86" selection-start-line="294" selection-start-column="86" selection-end-line="294" selection-end-column="86" />
+            <state relative-caret-position="156">
+              <caret line="531" column="36" selection-start-line="531" selection-start-column="36" selection-end-line="531" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#5541#5802#0" expanded="true" />
@@ -76,22 +78,22 @@
                 <element signature="e#13628#13653#0" expanded="true" />
                 <element signature="e#13692#13746#0" expanded="true" />
                 <element signature="e#17425#17441#0" expanded="true" />
-                <element signature="e#23772#23810#0" expanded="true" />
-                <element signature="e#23892#23930#0" expanded="true" />
-                <element signature="e#27252#28055#0" expanded="true" />
-                <element signature="e#28054#28055#0" expanded="true" />
-                <element signature="e#28125#28542#0" expanded="true" />
-                <element signature="e#28541#28542#0" expanded="true" />
+                <element signature="e#23741#23779#0" expanded="true" />
+                <element signature="e#23861#23899#0" expanded="true" />
+                <element signature="e#27221#28024#0" expanded="true" />
+                <element signature="e#28023#28024#0" expanded="true" />
+                <element signature="e#28094#28511#0" expanded="true" />
+                <element signature="e#28510#28511#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyWearableListenerService.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="MyWearableListenerService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/wearable/MyWearableListenerService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-55">
-              <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+            <state relative-caret-position="428">
+              <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
               <folding>
                 <element signature="e#616#617#0" expanded="true" />
                 <element signature="e#648#649#0" expanded="true" />
@@ -126,7 +128,7 @@
       <file leaf-file-name="SunshineFirebaseJobService.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/sync/SunshineFirebaseJobService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-665">
+            <state relative-caret-position="-588">
               <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
               <folding />
             </state>
@@ -2894,10 +2896,10 @@
         <option value="$PROJECT_DIR$/app/build.gradle" />
         <option value="$PROJECT_DIR$/wear/build.gradle" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/sync/SunshineSyncTask.java" />
-        <option value="$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/utilities/NetworkUtils.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/wearable/MyWearableListenerService.java" />
         <option value="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" />
+        <option value="$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java" />
       </list>
     </option>
   </component>
@@ -3353,7 +3355,7 @@
     <property name="android.project.structure.proportion" value="0.15" />
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/wear/src/main/res/drawable-nodpi/preview_digital.png" />
-    <property name="device.picker.selection" value="SSG6DAGQVG6D55YD" />
+    <property name="device.picker.selection" value="Android_Wear_Square_API_24" />
     <property name="ScreenshotViewer.SavePath" value="$PROJECT_DIR$/wear/src/main/res/drawable-nodpi" />
     <property name="UI_DESIGNER_EDITOR_MODE.NlPaletteManager-NlPreviewForm.SHOW" value="false" />
     <property name="SearchEverywhereHistoryKey" value="WeatherContract.WeatherEntry.COLUMN_WEATHER_ID&#9;PSI&#9;JAVA://com.example.android.sunshine.data.WeatherContract.WeatherEntry#COLUMN_WEATHER_ID&#10;normalizedDate &#9;PSI&#9;JAVA://com.example.android.sunshine.utilities.SunshineDateUtils#getLocalMidnightFromNormalizedUtcDate&#10;getPreferredLocation&#9;PSI&#9;JAVA://com.example.android.sunshine.data.SunshinePreferences#getPreferredWeatherLocation" />
@@ -3363,7 +3365,7 @@
       <recent name="$PROJECT_DIR$/wear/src/main/res/drawable-nodpi" />
     </key>
   </component>
-  <component name="RunManager" selected="Android App.app">
+  <component name="RunManager" selected="Android App.wear">
     <configuration default="true" type="AndroidRunConfigurationType" factoryName="Android App">
       <module name="" />
       <option name="DEPLOY" value="true" />
@@ -3670,8 +3672,8 @@
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.54103583" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.5467742" sideWeight="0.45896414" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.019354839" sideWeight="0.40796813" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Android Monitor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.046774194" sideWeight="0.45896414" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="true" show_stripe_button="true" weight="0.019354839" sideWeight="0.40796813" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32903227" sideWeight="0.49721116" order="7" side_tool="false" content_ui="tabs" />
@@ -3684,7 +3686,7 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Android Model" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.08225807" sideWeight="0.4557769" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30322582" sideWeight="0.4557769" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -4007,41 +4009,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1134">
-          <caret line="294" column="86" selection-start-line="294" selection-start-column="86" selection-end-line="294" selection-end-column="86" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#5541#5802#0" expanded="true" />
-            <element signature="e#5801#5802#0" expanded="true" />
-            <element signature="e#6809#6857#0" expanded="true" />
-            <element signature="e#6882#6930#0" expanded="true" />
-            <element signature="e#7033#7073#0" expanded="true" />
-            <element signature="e#7099#7139#0" expanded="true" />
-            <element signature="e#7167#7218#0" expanded="true" />
-            <element signature="e#10464#12056#0" expanded="true" />
-            <element signature="e#11102#11943#0" expanded="true" />
-            <element signature="e#11942#11943#0" expanded="true" />
-            <element signature="e#12055#12056#0" expanded="true" />
-            <element signature="e#13292#13323#0" expanded="true" />
-            <element signature="e#13326#13351#0" expanded="true" />
-            <element signature="e#13441#13476#0" expanded="true" />
-            <element signature="e#13479#13508#0" expanded="true" />
-            <element signature="e#13594#13625#0" expanded="true" />
-            <element signature="e#13628#13653#0" expanded="true" />
-            <element signature="e#13692#13746#0" expanded="true" />
-            <element signature="e#17425#17441#0" expanded="true" />
-            <element signature="e#23772#23810#0" expanded="true" />
-            <element signature="e#23892#23930#0" expanded="true" />
-            <element signature="e#27252#28055#0" expanded="true" />
-            <element signature="e#28054#28055#0" expanded="true" />
-            <element signature="e#28125#28542#0" expanded="true" />
-            <element signature="e#28541#28542#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/utilities/NetworkUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-866">
@@ -4089,7 +4056,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/sync/SunshineFirebaseJobService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-665">
+        <state relative-caret-position="-588">
           <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
           <folding />
         </state>
@@ -4097,11 +4064,46 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/com/example/android/sunshine/wearable/MyWearableListenerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-55">
-          <caret line="10" column="38" selection-start-line="10" selection-start-column="38" selection-end-line="10" selection-end-column="38" />
+        <state relative-caret-position="428">
+          <caret line="34" column="44" selection-start-line="34" selection-start-column="44" selection-end-line="34" selection-end-column="44" />
           <folding>
             <element signature="e#616#617#0" expanded="true" />
             <element signature="e#648#649#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/wear/src/main/java/com/example/prashant/wear/SunshineWatchFace.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="531" column="36" selection-start-line="531" selection-start-column="36" selection-end-line="531" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#5541#5802#0" expanded="true" />
+            <element signature="e#5801#5802#0" expanded="true" />
+            <element signature="e#6809#6857#0" expanded="true" />
+            <element signature="e#6882#6930#0" expanded="true" />
+            <element signature="e#7033#7073#0" expanded="true" />
+            <element signature="e#7099#7139#0" expanded="true" />
+            <element signature="e#7167#7218#0" expanded="true" />
+            <element signature="e#10464#12056#0" expanded="true" />
+            <element signature="e#11102#11943#0" expanded="true" />
+            <element signature="e#11942#11943#0" expanded="true" />
+            <element signature="e#12055#12056#0" expanded="true" />
+            <element signature="e#13292#13323#0" expanded="true" />
+            <element signature="e#13326#13351#0" expanded="true" />
+            <element signature="e#13441#13476#0" expanded="true" />
+            <element signature="e#13479#13508#0" expanded="true" />
+            <element signature="e#13594#13625#0" expanded="true" />
+            <element signature="e#13628#13653#0" expanded="true" />
+            <element signature="e#13692#13746#0" expanded="true" />
+            <element signature="e#17425#17441#0" expanded="true" />
+            <element signature="e#23741#23779#0" expanded="true" />
+            <element signature="e#23861#23899#0" expanded="true" />
+            <element signature="e#27221#28024#0" expanded="true" />
+            <element signature="e#28023#28024#0" expanded="true" />
+            <element signature="e#28094#28511#0" expanded="true" />
+            <element signature="e#28510#28511#0" expanded="true" />
           </folding>
         </state>
       </provider>

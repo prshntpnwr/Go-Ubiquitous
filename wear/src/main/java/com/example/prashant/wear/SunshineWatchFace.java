@@ -495,7 +495,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                     mCalendar.get(Calendar.MINUTE), mCalendar.get(Calendar.SECOND));
             canvas.drawText(text, mXOffset, mYOffset, mTextPaint);*/
 
-            int centerAdjust = 10;
+            int centerAdjust = 40;
             String colonString =":";
 
             //onDraw hours
@@ -517,7 +517,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
 
             //onDraw Colon
             canvas.drawText(colonString,
-                    bounds.centerX() -centerAdjust,
+                    bounds.centerX() - centerAdjust,
                     mYOffset,
                     mColonPaint);
 
@@ -532,7 +532,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             // Otherwise, if we're in 12-hour mode, draw AM/PM
             if (!is24Hour) {
                 canvas.drawText(getMeridiemString(mCalendar.get(Calendar.AM_PM)),
-                        bounds.centerX() + mMinutePaint.measureText(minuteString) + centerAdjust,
+                        bounds.centerX() + mMinutePaint.measureText(minuteString) - 20,
                         mYOffset,
                         mMeridiemPaint);
             }
@@ -572,8 +572,8 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                         mWeatherIconPaint);
             }
 
-            Log.d(TAG, "HERE IS HIGH TEMPERAtURE ----------- " + mMaxTemperature);
-            Log.d(TAG, "HERE IS LOW TEMPERAtURE ------------ " + mMinTemperature);
+            Log.d(TAG, "HERE IS HIGH TEMPERAtURE - " + mMaxTemperature);
+            Log.d(TAG, "HERE IS LOW TEMPERAtURE -" + mMinTemperature);
 
             //onDraw weather detail
             String highTempText = String.format(getString(R.string.format_temperature), Float.valueOf(mMaxTemperature));

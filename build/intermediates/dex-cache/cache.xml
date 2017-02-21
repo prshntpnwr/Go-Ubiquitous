@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="721a8a6368814e9075597a6b29cbf2c4ff4e49ca">
+        sha1="b320da488f7d12da1b512fc3bb5f1265adb533c6">
         <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6b4bb6a4ff50f8740c5f0bc644c5737c5b3093ca/classes.dex" />
     </item>
     <item
@@ -214,7 +214,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="ee5d73459a5014a2e0ab8b49ee99339f94e57f29">
+        sha1="1336b75310657a3a28249625d716544a5df37d99">
         <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ff584e2e90f68b463ba10955d470a9b2613cbbf2/classes.dex" />
     </item>
     <item

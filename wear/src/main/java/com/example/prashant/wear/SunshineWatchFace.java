@@ -45,6 +45,7 @@ import android.widget.Toast;
 import java.lang.ref.WeakReference;
 import android.text.format.DateFormat;
 
+import com.example.android.sunshine.R;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.common.api.ResultCallback;
@@ -129,8 +130,8 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
         private GoogleApiClient googleApiClient;
 
         private int mWeatherId = 0;
-        private String mMaxTemperature = "22";
-        private String mMinTemperature = "11";
+        private String mMaxTemperature = "0";
+        private String mMinTemperature = "0";
         private long mTimeStamp;
 
         private Paint mBackgroundPaint;
@@ -179,6 +180,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                     .setBackgroundVisibility(WatchFaceStyle.BACKGROUND_VISIBILITY_INTERRUPTIVE)
                     .setShowSystemUiTime(false)
                     .build());
+
             Resources resources = SunshineWatchFace.this.getResources();
             mYOffset = resources.getDimension(R.dimen.digital_y_offset);
             mXOffset = resources.getDimension(R.dimen.digital_x_offset);

@@ -115,7 +115,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="972a3e0909653bb190bc4d43a42b5085a5cbe018">
+        sha1="b84098ea55f04e987266f6478c6a33f2e1e3c643">
         <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_6b4bb6a4ff50f8740c5f0bc644c5737c5b3093ca/classes.dex" />
     </item>
     <item
@@ -160,7 +160,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="906dd9813b4e1c6a1d003bb0e7053410b8d7bd66">
+        sha1="59d87805fe26a5f53157319de7356bde2b30b640">
         <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_210e7968d420c309b4e90087c3ecebe3b5c8694a/classes.dex" />
     </item>
     <item
@@ -214,7 +214,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="9142aa955b9b44364c4fe276df5785731996f054">
+        sha1="fe8cee960f121ea1abbdc74036679df520c2ccaf">
         <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/wear/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_ff584e2e90f68b463ba10955d470a9b2613cbbf2/classes.dex" />
     </item>
     <item
@@ -223,7 +223,7 @@
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
-        sha1="e68cf062b1ab83a3a41001c73de2fca80369eb8b">
+        sha1="f8b38300dde8f610a4c67f64e8321136c0377351">
         <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_d2ee681a6e81e4c9e3c60b895c1f72b8447659dc/classes.dex" />
     </item>
     <item
@@ -264,21 +264,21 @@
     </item>
     <item
         is-multidex="true"
-        jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
-        jumboMode="true"
-        optimize="true"
-        revision="25.0.2"
-        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
-        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_5b2f1c1cf8e907eb138ff5596453eff52f4414c3/classes.dex" />
-    </item>
-    <item
-        is-multidex="true"
         jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/25.1.0/jars/classes.jar"
         jumboMode="true"
         optimize="true"
         revision="25.0.2"
         sha1="aee64634871d88a419d59eb743c1258a60f19700">
         <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-25.1.0_c7b97873e2cc395b66e39856f7bdca98975ffd70/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/25.1.0/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f02263e35e52668dd17b73bf961437e3d562b35f">
+        <dex dex="/home/prashant/Documents/AndroidStudioProjects_folder/Go-Ubiquitous/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-25.1.0_5b2f1c1cf8e907eb138ff5596453eff52f4414c3/classes.dex" />
     </item>
     <item
         is-multidex="true"

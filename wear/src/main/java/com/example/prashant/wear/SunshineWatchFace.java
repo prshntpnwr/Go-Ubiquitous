@@ -129,26 +129,26 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
         private static final String KEY_PATH = "/wearable";
         private static final String KEY_TIME = "current_time";
 
-        GoogleApiClient googleApiClient;
+        private GoogleApiClient googleApiClient;
 
         private int mWeatherId = 0;
-        private String mMaxTemperature = "-22";
-        private String mMinTemperature = "-11";
+        private String mMaxTemperature = "22";
+        private String mMinTemperature = "11";
         private long mTimeStamp;
 
-        Paint mBackgroundPaint;
+        private Paint mBackgroundPaint;
         //Paint mTextPaint;
         //boolean mAmbient;
-        Calendar mCalendar;
-        Paint mHourPaint;
-        Paint mMinutePaint;
-        Paint mDatePaint;
-        Paint mColonPaint;
-        Paint mMeridiemPaint;
-        Paint mDividerLinePaint;
-        Paint mWeatherIconPaint;
-        Paint mLowTempPaint;
-        Paint mHighTempPaint;
+        private Calendar mCalendar;
+        private Paint mHourPaint;
+        private Paint mMinutePaint;
+        private Paint mDatePaint;
+        private Paint mColonPaint;
+        private Paint mMeridiemPaint;
+        private Paint mDividerLinePaint;
+        private Paint mWeatherIconPaint;
+        private Paint mLowTempPaint;
+        private Paint mHighTempPaint;
 
         final BroadcastReceiver mTimeZoneReceiver = new BroadcastReceiver() {
             @Override
@@ -158,15 +158,16 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                 invalidate();
             }
         };
-        float mXOffset;
-        float mYOffset;
-        float mLineHeight;
-        String mAmString;
-        String mPmString;
 
-        Date mDate;
-        SimpleDateFormat mDayOfWeekFormat;
-        Bitmap weatherIcon;
+        private float mXOffset;
+        private float mYOffset;
+        private float mLineHeight;
+        private String mAmString;
+        private String mPmString;
+
+        private Date mDate;
+        private SimpleDateFormat mDayOfWeekFormat;
+        private Bitmap weatherIcon;
 
         /**
          * Whether the display supports fewer bits for each color in ambient mode. When true, we
@@ -306,6 +307,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             if (mRegisteredTimeZoneReceiver) {
                 return;
             }
+
             mRegisteredTimeZoneReceiver = true;
             IntentFilter filter = new IntentFilter(Intent.ACTION_TIMEZONE_CHANGED);
             filter.addAction(Intent.ACTION_LOCALE_CHANGED);
@@ -316,6 +318,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             if (!mRegisteredTimeZoneReceiver) {
                 return;
             }
+
             mRegisteredTimeZoneReceiver = false;
             SunshineWatchFace.this.unregisterReceiver(mTimeZoneReceiver);
         }
@@ -400,6 +403,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                 mHighTempPaint.setAntiAlias(!inAmbientMode);
                 mLowTempPaint.setAntiAlias(!inAmbientMode);
             }
+
             invalidate();
 
             // Whether the timer should be running depends on whether we're visible (as well as
@@ -427,6 +431,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                             .show();
                     break;
             }
+
             invalidate();
         }
 
@@ -681,6 +686,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                         processItem(dataItem);
                     }
                 }
+
                 dataEventBuffer.release();
                 invalidate();
             }
@@ -695,6 +701,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                     processItem(item);
 
                 }
+                
                 dataItems.release();
                 invalidate();
             }

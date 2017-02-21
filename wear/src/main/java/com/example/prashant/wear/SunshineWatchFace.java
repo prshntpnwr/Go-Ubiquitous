@@ -701,7 +701,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                     processItem(item);
 
                 }
-                
+
                 dataItems.release();
                 invalidate();
             }

@@ -132,8 +132,8 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
         GoogleApiClient googleApiClient;
 
         private int mWeatherId = 0;
-        private String mMaxTemperature = "22";
-        private String mMinTemperature = "11";
+        private String mMaxTemperature = "-22";
+        private String mMinTemperature = "-11";
         private long mTimeStamp;
 
         Paint mBackgroundPaint;
@@ -584,7 +584,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                     Float.valueOf(mMinTemperature));
 
             canvas.drawText(highTempText,
-                    bounds.centerX() - 30,
+                    bounds.centerX() - 40,
                     mYOffset + (mLineHeight * 3.2f),
                     mHighTempPaint);
 

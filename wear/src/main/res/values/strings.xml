@@ -1,7 +1,7 @@
 <resources xmlns:xliff="http://schemas.android.com/apk/res-auto">
     <string name="app_name">wear</string>
     <string name="message">Watch face tapped</string>
-    <string name="my_digital_name">My Digital</string>
+    <string name="my_digital_name">Sunshine</string>
 
     <string name="digital_am">AM</string>
     <string name="digital_pm">PM</string>

@@ -19,7 +19,6 @@ import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
-import android.support.annotation.NonNull;
 import android.text.format.DateUtils;
 import android.util.Log;
 
@@ -138,7 +137,6 @@ public class SunshineSyncTask {
                                 }
                             }
                         });
-                        //Log.d(TAG, "Data To Watch Face");
                     }
 
                     else {

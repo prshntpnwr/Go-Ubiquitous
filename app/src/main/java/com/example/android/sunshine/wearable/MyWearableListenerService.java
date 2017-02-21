@@ -1,8 +1,5 @@
 package com.example.android.sunshine.wearable;
 
-import android.content.Context;
-import android.content.Intent;
-
 import com.example.android.sunshine.sync.SunshineSyncTask;
 import com.google.android.gms.wearable.DataApi;
 import com.google.android.gms.wearable.MessageEvent;

@@ -61,7 +61,6 @@ import com.google.android.gms.wearable.NodeApi;
 import com.google.android.gms.wearable.Wearable;
 
 import java.text.SimpleDateFormat;
-import java.util.BitSet;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
@@ -76,8 +75,6 @@ import java.util.concurrent.TimeUnit;
 public class SunshineWatchFace extends CanvasWatchFaceService {
     private static final Typeface NORMAL_TYPEFACE =
             Typeface.create(Typeface.SANS_SERIF, Typeface.NORMAL);
-   // private static final Typeface BOLD_TYPEFACE =
-   //                     Typeface.create(Typeface.SANS_SERIF, Typeface.BOLD);
 
     /**
      * Update rate in milliseconds for interactive mode. We update once a second since seconds are
@@ -137,8 +134,6 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
         private long mTimeStamp;
 
         private Paint mBackgroundPaint;
-        //Paint mTextPaint;
-        //boolean mAmbient;
         private Calendar mCalendar;
         private Paint mHourPaint;
         private Paint mMinutePaint;
@@ -183,7 +178,6 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                     .setCardPeekMode(WatchFaceStyle.PEEK_MODE_VARIABLE)
                     .setBackgroundVisibility(WatchFaceStyle.BACKGROUND_VISIBILITY_INTERRUPTIVE)
                     .setShowSystemUiTime(false)
-                    //.setAcceptsTapEvents(true)
                     .build());
             Resources resources = SunshineWatchFace.this.getResources();
             mYOffset = resources.getDimension(R.dimen.digital_y_offset);
@@ -236,14 +230,6 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             paint.setAntiAlias(true);
             return paint;
         }
-
-        /*private Paint createTextPaint(int textColor, Typeface typeface) {
-            Paint paint = new Paint();
-            paint.setColor(textColor);
-            paint.setTypeface(typeface);
-            paint.setAntiAlias(true);
-            return paint;
-        }*/
 
         private void initFormat() {
             mDayOfWeekFormat = new SimpleDateFormat("EEE, MMM d yyyy", Locale.getDefault());
@@ -330,8 +316,7 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             // Load resources that have alternate values for round watches.
             Resources resources = SunshineWatchFace.this.getResources();
             boolean isRound = insets.isRound();
-            /*mXOffset = resources.getDimension(isRound
-                    ? R.dimen.digital_x_offset_round : R.dimen.digital_x_offset);*/
+
             float textSize = resources.getDimension(isRound
                     ? R.dimen.digital_text_size_round : R.dimen.digital_text_size);
 
@@ -349,16 +334,11 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             mHighTempPaint.setTextSize(tempSize);
             mLowTempPaint.setTextSize(tempSize);
 
-            //mTextPaint.setTextSize(textSize);
         }
 
         @Override
         public void onPropertiesChanged(Bundle properties) {
             super.onPropertiesChanged(properties);
-
-            //boolean burnInProtection = properties.getBoolean(PROPERTY_BURN_IN_PROTECTION, false);
-            //mHourPaint.setTypeface(burnInProtection ? NORMAL_TYPEFACE : BOLD_TYPEFACE);
-
             mLowBitAmbient = properties.getBoolean(PROPERTY_LOW_BIT_AMBIENT, false);
         }
 
@@ -411,30 +391,6 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             updateTimer();
         }
 
-        /**
-         * Captures tap event (and tap type) and toggles the background color if the user finishes
-         * a tap.
-         */
-        @Override
-        public void onTapCommand(int tapType, int x, int y, long eventTime) {
-            switch (tapType) {
-                case TAP_TYPE_TOUCH:
-                    // The user has started touching the screen.
-                    break;
-                case TAP_TYPE_TOUCH_CANCEL:
-                    // The user has started a different gesture or otherwise cancelled the tap.
-                    break;
-                case TAP_TYPE_TAP:
-                    // The user has completed the tap gesture.
-                    // TODO: Add code to handle the tap gesture.
-                    Toast.makeText(getApplicationContext(), R.string.message, Toast.LENGTH_SHORT)
-                            .show();
-                    break;
-            }
-
-            invalidate();
-        }
-
         private String formatTwoDigitNumber(int hour) {
             return String.format("%02d", hour);
         }
@@ -471,7 +427,6 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
                 weatherIconId = R.drawable.ic_cloudy;
             }
 
-            // default bitmap
             return BitmapFactory.decodeResource(getResources(), weatherIconId);
         }
 
@@ -490,15 +445,6 @@ public class SunshineWatchFace extends CanvasWatchFaceService {
             } else {
                 canvas.drawRect(0, 0, bounds.width(), bounds.height(), mBackgroundPaint);
             }
-
-            // Draw H:MM in ambient mode or H:MM:SS in interactive mode.
-
-            /*String text = mAmbient
-                    ? String.format("%d:%02d", mCalendar.get(Calendar.HOUR),
-                    mCalendar.get(Calendar.MINUTE))
-                    : String.format("%d:%02d:%02d", mCalendar.get(Calendar.HOUR),
-                    mCalendar.get(Calendar.MINUTE), mCalendar.get(Calendar.SECOND));
-            canvas.drawText(text, mXOffset, mYOffset, mTextPaint);*/
 
             int TimeCenterAdjust = 40;
             int MeridiemAdjust = 20;

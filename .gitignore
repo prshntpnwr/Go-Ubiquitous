@@ -36,7 +36,12 @@ captures/
 .DS_Store
 /captures
 
+#git tem files
 .gitignore~
 
+#readme temp files
+README.md~
 
+#unnamed temp files
+Untitled Document~
 

@@ -5,6 +5,8 @@
 
 This Repository contain Sixth project in Udacity's Android Developer Nanodegree.
 
+A wearable watch face for Sunshine a weather app that runs on an Android Wear device and provide enrich user experience.
+
 Screenshots :
 ---------------------
 
